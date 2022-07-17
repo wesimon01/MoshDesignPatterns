@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Factory\Exercise\" />
+    <Folder Include="Momento\" />
+    <Folder Include="Prototype\Exercise\" />
+    <Folder Include="Prototype\Solution\" />
+    <Folder Include="Singleton\Exercise\" />
+    <Folder Include="Strategy\Exercise\" />
+    <Folder Include="Template\" />
+    <Folder Include="State\Exercise\" />
+  </ItemGroup>
+
+</Project>

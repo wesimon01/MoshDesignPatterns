@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoshDesignPatterns.Domain", "MoshDesignPatterns.Domain\MoshDesignPatterns.Domain.csproj", "{8C8F86B8-E564-4464-A746-22DFBAE75895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoshDesignPatterns.App", "MoshDesignPatterns.App\MoshDesignPatterns.App.csproj", "{4AB72EF5-4B86-4DDB-BC81-4779E0F40335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C8F86B8-E564-4464-A746-22DFBAE75895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8F86B8-E564-4464-A746-22DFBAE75895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8F86B8-E564-4464-A746-22DFBAE75895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8F86B8-E564-4464-A746-22DFBAE75895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB72EF5-4B86-4DDB-BC81-4779E0F40335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB72EF5-4B86-4DDB-BC81-4779E0F40335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB72EF5-4B86-4DDB-BC81-4779E0F40335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB72EF5-4B86-4DDB-BC81-4779E0F40335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8767C28-0DAD-4964-A327-8429C98E7BE3}
+	EndGlobalSection
+EndGlobal
