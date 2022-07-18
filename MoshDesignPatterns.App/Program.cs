@@ -9,7 +9,7 @@ var patternToRun = "singleton";
 patternToRun = patternToRun.ToLowerInvariant();
 
 
-//state
+// state - Allows an object to behave differently depending on the state it is in
 if (patternToRun == "state")
 {
     var directionService = new DirectionService(new Bicycling());
@@ -17,20 +17,22 @@ if (patternToRun == "state")
     var direction = directionService.GetDirection();
 }
 
-//strategy
+// strategy - Allows passing different algorithms (behaviors) to an object.  Allows
+//            defining a template (skeleton) for an operation.  Specific steps will then be
+//            implemented in subclasses.
 if (patternToRun == "strategy")
 {
     var chatClient = new ChatClient(new AESEncryption());
     chatClient.Send("MessageToEncrypt");
 }
 
-//template
+// template
 if (patternToRun == "template")
 {
 
 }
 
-//factory
+// factory - Allows deferring the creation of an object to subclasses
 if (patternToRun == "factory")
 {
     var scheduler2 = new ArabianScheduler();
@@ -40,7 +42,7 @@ if (patternToRun == "factory")
     scheduler3.Schedule(new Event());
 }
 
-//singleton
+// singleton - To ensure an object has only a single instance
 if (patternToRun == "singleton")
 {
     var logger1 = Logger.GetInstance("file1");
@@ -51,6 +53,7 @@ if (patternToRun == "singleton")
     Console.WriteLine(logger1 == logger3);
 }
 
+// prototype - To create new objects by copying an existing object
 if (patternToRun == "prototype")
 {
     var timeline = new Timeline();
