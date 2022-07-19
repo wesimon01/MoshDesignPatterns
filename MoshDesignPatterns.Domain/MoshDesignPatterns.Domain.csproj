@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Structural\Adapter\Exercise\" />
     <Folder Include="Creational\Factory\Exercise\" />
     <Folder Include="Momento\" />
     <Folder Include="Creational\Prototype\Exercise\" />
     <Folder Include="Creational\Singleton\Exercise\" />
     <Folder Include="Behavioral\Strategy\Exercise\" />
+    <Folder Include="Structural\Composite\Exercise\" />
+    <Folder Include="Structural\Composite\Solution\" />
     <Folder Include="Template\" />
     <Folder Include="Behavioral\State\Exercise\" />
   </ItemGroup>

@@ -1,11 +1,13 @@
 ﻿using MoshDesignPatterns.Domain;
+using MoshDesignPatterns.Domain.Adapter;
 using MoshDesignPatterns.Domain.Factory;
 using MoshDesignPatterns.Domain.Prototype;
 using MoshDesignPatterns.Domain.Singleton;
 using MoshDesignPatterns.Domain.State;
 using MoshDesignPatterns.Domain.Strategy;
 
-var patternToRun = "singleton";
+
+var patternToRun = "adapter";
 patternToRun = patternToRun.ToLowerInvariant();
 
 
@@ -64,3 +66,10 @@ if (patternToRun == "prototype")
     contextMenu.Duplicate(text);
 }
 
+// adapter - Allows converting the inteface of a class into another interface that clients expect
+if (patternToRun == "adapter")
+{
+    var emailClient = new EmailClient();
+    emailClient.AddProvider(new GmailProvider());
+    emailClient.DownloadEmails();
+}
