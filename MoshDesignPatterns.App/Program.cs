@@ -5,7 +5,7 @@ using MoshDesignPatterns.Domain.Prototype;
 using MoshDesignPatterns.Domain.Singleton;
 using MoshDesignPatterns.Domain.State;
 using MoshDesignPatterns.Domain.Strategy;
-
+using MoshDesignPatterns.Domain.Structural.Facade;
 
 var patternToRun = "adapter";
 patternToRun = patternToRun.ToLowerInvariant();
@@ -72,4 +72,12 @@ if (patternToRun == "adapter")
     var emailClient = new EmailClient();
     emailClient.AddProvider(new GmailProvider());
     emailClient.DownloadEmails();
+}
+
+// facade - provides a simplified, higher-level interface to a subsystem. Clients can talk to the facade
+//          rather than individual classes in the subsystem.
+if (patternToRun == "facade")
+{
+    var twitterAPI = new TwitterAPI("appKey", "secret");
+    twitterAPI.GetRecentTweets();
 }

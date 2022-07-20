@@ -15,6 +15,7 @@
     <Folder Include="Behavioral\Strategy\Exercise\" />
     <Folder Include="Structural\Composite\Exercise\" />
     <Folder Include="Structural\Composite\Solution\" />
+    <Folder Include="Structural\Facade\Exercise\" />
     <Folder Include="Template\" />
     <Folder Include="Behavioral\State\Exercise\" />
   </ItemGroup>
