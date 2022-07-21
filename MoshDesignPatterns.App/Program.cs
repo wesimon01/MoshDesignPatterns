@@ -1,5 +1,6 @@
 ﻿using MoshDesignPatterns.Domain;
 using MoshDesignPatterns.Domain.Adapter;
+using MoshDesignPatterns.Domain.Behavioral.Template;
 using MoshDesignPatterns.Domain.Factory;
 using MoshDesignPatterns.Domain.Prototype;
 using MoshDesignPatterns.Domain.Singleton;
@@ -7,7 +8,7 @@ using MoshDesignPatterns.Domain.State;
 using MoshDesignPatterns.Domain.Strategy;
 using MoshDesignPatterns.Domain.Structural.Facade;
 
-var patternToRun = "adapter";
+var patternToRun = "template";
 patternToRun = patternToRun.ToLowerInvariant();
 
 
@@ -80,4 +81,12 @@ if (patternToRun == "facade")
 {
     var twitterAPI = new TwitterAPI("appKey", "secret");
     twitterAPI.GetRecentTweets();
+}
+
+// template - allows defining a template (skeleton) for an operation.
+//            Specific steps will then be implemented in subclasses.
+if (patternToRun == "template")
+{
+    var guiWindow = new GUIWindow();
+    guiWindow.Close();
 }
