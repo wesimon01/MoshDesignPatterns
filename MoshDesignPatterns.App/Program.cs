@@ -6,6 +6,7 @@ using MoshDesignPatterns.Domain.Prototype;
 using MoshDesignPatterns.Domain.Singleton;
 using MoshDesignPatterns.Domain.State;
 using MoshDesignPatterns.Domain.Strategy;
+using MoshDesignPatterns.Domain.Structural.Bridge.Demo;
 using MoshDesignPatterns.Domain.Structural.Facade;
 
 var patternToRun = "template";
@@ -89,4 +90,17 @@ if (patternToRun == "template")
 {
     var guiWindow = new GUIWindow();
     guiWindow.Close();
+}
+
+
+if (patternToRun == "bridge")
+{
+    var advancedRemote = new AdvancedRemoteControl(new SamsungTV());
+    var advancedRemote2 = new AdvancedRemoteControl(new SonyTV());
+
+    advancedRemote.TurnOn();
+    advancedRemote2.TurnOn();
+
+    advancedRemote.TurnOn();
+    advancedRemote2.TurnOff();
 }
