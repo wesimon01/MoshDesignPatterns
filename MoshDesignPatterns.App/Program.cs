@@ -9,7 +9,7 @@ using MoshDesignPatterns.Domain.Strategy;
 using MoshDesignPatterns.Domain.Structural.Bridge.Demo;
 using MoshDesignPatterns.Domain.Structural.Facade;
 
-var patternToRun = "template";
+var patternToRun = "bridge";
 patternToRun = patternToRun.ToLowerInvariant();
 
 
@@ -72,7 +72,7 @@ if (patternToRun == "prototype")
 if (patternToRun == "adapter")
 {
     var emailClient = new EmailClient();
-    emailClient.AddProvider(new GmailProvider());
+    emailClient.AddProvider(new GmailProvider(new GmailClient()));
     emailClient.DownloadEmails();
 }
 
@@ -101,6 +101,6 @@ if (patternToRun == "bridge")
     advancedRemote.TurnOn();
     advancedRemote2.TurnOn();
 
-    advancedRemote.TurnOn();
+    advancedRemote.TurnOff();
     advancedRemote2.TurnOff();
 }

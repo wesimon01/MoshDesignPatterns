@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MoshDesignPatterns.Domain.Adapter
+﻿namespace MoshDesignPatterns.Domain.Adapter
 {
     public class EmailClient
     {
-        private List<IEmailProvider> providers = new List<IEmailProvider>();
+        private List<IEmailProvider> providers = new();
 
         public void AddProvider(IEmailProvider provider)
         {

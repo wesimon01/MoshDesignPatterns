@@ -2,7 +2,8 @@
 {
     public class SonyTV : IDevice
     {
-        private readonly string deviceName = nameof(SonyTV);
+        const string deviceName = nameof(SonyTV);
+
         public void TurnOn()
         {
             Console.WriteLine($"{deviceName}: TurnOn");

@@ -2,7 +2,7 @@
 {
     public class SamsungTV : IDevice
     {
-        private readonly string deviceName = nameof(SamsungTV);
+        const string deviceName = nameof(SamsungTV);
 
         public void TurnOn()
         {

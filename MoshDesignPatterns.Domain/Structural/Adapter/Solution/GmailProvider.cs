@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MoshDesignPatterns.Domain.Adapter
+﻿namespace MoshDesignPatterns.Domain.Adapter
 {
     public class GmailProvider : IEmailProvider
     {
-        private GmailClient gmailClient = new GmailClient();
+        private readonly GmailClient gmailClient;
+
+        public GmailProvider(GmailClient gmailClient)
+        {
+            this.gmailClient = gmailClient;
+        }
 
         public void DownloadEmails()
         {
