@@ -15,7 +15,6 @@
     <Folder Include="Structural\Composite\Exercise\" />
     <Folder Include="Structural\Composite\Demo\" />
     <Folder Include="Structural\Composite\Solution\" />
-    <Folder Include="Structural\Decorator\Demo\" />
     <Folder Include="Structural\Facade\Exercise\" />
     <Folder Include="Structural\Facade\Demo\" />
   </ItemGroup>

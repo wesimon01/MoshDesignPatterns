@@ -2,7 +2,7 @@
 {
     public class ImageView
     {
-        private Image image;
+        private readonly Image image;
 
         public ImageView(Image image)
         {
